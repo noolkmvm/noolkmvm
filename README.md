@@ -1,16 +1,26 @@
-### Hi there 👋
+```php
+<?php
 
-<!--
-**noolkmvm/noolkmvm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace Philip;
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class About extends Me
+{
+    public string $name = 'Philip Plushev';
+    public string $education = 'Bachelor in Computer hardware and automated systems software';
+    public string $job = 'Backend PHP Developer';
+    
+    public function getSkills(): array
+    {
+        return [
+            Php::class,
+            Laravel::class,
+            Symfony::class,
+            Yii2::class,
+            Javascript::class,
+            Python::class,
+            MySQL::class,
+            Redis::class,
+        ];
+    }
+}
+```
